@@ -1,0 +1,128 @@
+body {
+  box-sizing: border-box;
+  color: teal;
+  background-image: url(Bground.jpg);
+  background-size: 100%;
+  font-size: 30px;
+  font-style: italic;
+  background-repeat: no-repeat;
+  font-family: monospace;
+}
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  margin: 0px;
+  margin-right: 20px;
+}
+.Header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.NavItem {
+  float: right;
+}
+.Header a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.list {
+  padding: 0%;
+  margin-top: 20px;
+}
+div.input-bars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+.input-text {
+  width: 78%;
+  border: 2px solid teal;
+  border-radius: 8px;
+}
+button {
+  float: right;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid teal;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button.btn {
+  font-size: 18px;
+  height: 34px;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    background-image: url(Bground.jpg);
+    background-size: 100%;
+    font-size: 15px;
+  }
+  div.container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  div.input-bars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 34px;
+  }
+  .input-text {
+    width: 78%;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
+  button.btn {
+    float: right;
+  }
+  li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
